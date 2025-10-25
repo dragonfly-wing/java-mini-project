@@ -1,25 +1,5 @@
 package user;
-
 import java.util.Scanner;
-
-// =====================
-// Custom Exceptions
-// =====================
-class InvalidInputException extends RuntimeException {
-    public InvalidInputException(String message) {
-        super(message);
-    }
-}
-
-class NegativeValueException extends RuntimeException {
-    public NegativeValueException(String message) {
-        super(message);
-    }
-}
-
-// =====================
-// UserProfile Class
-// =====================
 public class UserProfile {
     private String name;
     private int age;
@@ -80,8 +60,8 @@ public class UserProfile {
         sc.nextLine(); // consume newline
         System.out.print("Enter fitness goal: ");
         String goal = sc.nextLine();
+sc.close();
 
-        return new UserProfile(name, age, weight, goal);
-    }
+        return new UserProfile(name, age, weight, goal);     }
 }
 

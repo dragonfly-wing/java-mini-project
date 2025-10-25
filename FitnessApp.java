@@ -41,6 +41,10 @@ public class FitnessApp extends Application {
         Scene scene = new Scene(tabs, 600, 400);
         primaryStage.setScene(scene);
         primaryStage.show();
+        primaryStage.setOnCloseRequest(event -> {
+    System.out.println("FitnessApp closed!");
+});
+
     }
 
     // --------------------------
